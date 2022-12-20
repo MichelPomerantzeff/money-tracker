@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Money Tracker</title>
+</head>
+
+<body>
+    <main>
+        <h1>Money Tracker</h1>
+        <div class="main_container">
+            
+            <div class="totals">
+                
+                <div class="money_in">
+                    <h1>Money Earned</h1>
+                    <div class="total_earned">€ 0</div>
+                </div>
+                
+                <div class="money_available">
+                    <h1>Money Available</h1>
+                    <div class="total_available">€ 0</div>
+                </div>
+                
+                <div class="money_out">
+                    <h1>Money Spent</h1>
+                    <div class="total_spent">€ 0</div>
+                </div>
+            </div>
+            
+            <div class="add_container">
+                <div class="inputs">
+                    <input type="text" placeholder="description">
+                    <input type="number" placeholder="value ">
+                </div>
+
+                <div class="add_buttons">
+                    <button class="income">Add Income</button>
+                    <button class="expense">Add expense</button>
+                </div>
+            </div>
+
+            <div class="stored_values_container">
+                <div class="stored_income_container">
+                    <h1 class="income_title">Income</h1>
+                </div>
+                <div class="stored_expenses_container">
+                    <h1 class="expense_title">Expenses</h1>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
