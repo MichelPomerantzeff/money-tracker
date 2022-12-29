@@ -1,13 +1,18 @@
 * {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
-    background-color: rgba(135, 207, 235, 0.404);
+    /* background-color: rgba(135, 207, 235, 0.404); */
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
+}
+
+main h1 {
+    padding: 50px;
 }
 
 .main_container {
@@ -18,30 +23,50 @@ main {
 }
 
 .totals {
-    /* background: red; */
+    /* background: rgba(255, 0, 0, 0.219); */
     display: flex;
-    padding: 10px;
     justify-content: space-evenly;
-    padding: 50px 0;
 }
 
 .money_out,
 .money_in,
 .money_available {
-    background: #fff;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 10px;
     padding: 10px;
 }
 
+.money_out {
+    background: rgba(255, 0, 0, 0.116);
+    margin-top: 40px;
+}
+
+.money_in {
+    background: rgba(0, 128, 0, 0.219);
+    margin-top: 40px;
+}
+
+.money_available {
+    background: rgba(0, 0, 0, 0.123);
+    margin-bottom: 40px;
+}
 
 .total_spent {
     color: red;
+    text-align: center;
 }
 
 .total_earned {
     color: green;
+    text-align: center;
 }
 
-.total_available {}
+.total_available {
+    color: black;
+    text-align: center;
+}
 
 .add_container {
     /* background: blue; */
@@ -50,27 +75,93 @@ main {
     padding: 10px;
     align-items: center;
     padding: 50px 0;
+    gap: 20px;
 }
 
 .inputs {
     display: flex;
+    gap: 20px;
+}
+
+.description {
+    padding: 10px;
+    width: 70%;
+}
+
+.value {
+    padding: 10px;
+    width: 20%;
 }
 
 .add_buttons {
     display: flex;
+    gap: 10px;
+}
+
+.income_button {
+    background: green;
+    color: #fff;
+    cursor: pointer;
+}
+
+.expense_button {
+    background: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.income_button:active {
+    background: rgba(0, 128, 0, 0.438);
+}
+
+.expense_button:active {
+    background: rgba(255, 0, 0, 0.404);
 }
 
 .stored_values_container {
     /* background: yellow; */
     display: flex;
-    padding: 10px;
     justify-content: space-evenly;
     flex: 1;
+}
+
+.stored_income_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stored_expenses_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .income_title {
     color: green;
 }
+
 .expense_title {
     color: red;
+}
+
+.income_result {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.new_income_div{
+    background: gray;
+    border-radius: 10px;
+    color: #fff;
+    padding: 8px;
+}
+
+.expense_result {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
 }
