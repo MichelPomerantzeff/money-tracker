@@ -1,0 +1,111 @@
+.balance-container {
+    flex: 1;
+    width: 100%;
+}
+
+.transactions-container{
+    border: solid 1px;
+    width: 50%;
+    margin: 80px auto;
+}
+
+.timeline{
+    border-bottom: solid 1px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.month{
+    cursor: pointer;
+    padding: 10px;
+}
+
+.balance{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inflow, .outflow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inflow > span:nth-child(2) {
+    color: rgb(61, 169, 202);
+}
+
+.outflow > span:nth-child(2) {
+    color: red;
+}
+
+.hr-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hr{
+    width: 100px;
+    border-top: 1px solid #000;
+}
+
+.total-balance{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.transactions-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.transaction-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    border-bottom: solid 1px;
+}
+
+.transaction-date{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.transaction-day{
+    font-size: 3rem;
+}
+
+.transaction-period{
+    display: flex;flex-direction: column;
+}
+
+.source-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.source-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.source{
+    display: flex;
+    flex-direction: column;
+}
+
+.source-pic {
+    padding: 25px;
+    background: #525151;
+    border-radius: 50%;
+}

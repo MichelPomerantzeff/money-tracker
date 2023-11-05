@@ -1,0 +1,38 @@
+.topbar-container{
+    border-bottom: solid 1px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.wallet-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.wallet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-button > button {
+    background: #2db84c;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-button > button:hover {
+    background: rgb(39, 173, 68);
+}
+
+.add-button > button:active {
+    background: #2db84c;
+}
